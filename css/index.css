@@ -5,7 +5,8 @@
     --neutral-blue-900: hsl(216, 50%, 16%);
     --neutral-blue-800: hsl(215, 32%, 27%);
     --neutral-white: hsl(0, 0%, 100%);
-    --background: hsl(215.63, 55.17%, 11.37%)
+    --background: hsl(215.63, 55.17%, 11.37%);
+    --image-background: hsla(178.118, 100%, 50%, 0.6);
 }
 
 *::before,
@@ -33,6 +34,7 @@ img {
 }
 
 main {
+    position: relative;
     width: 360px;
     background: var(--neutral-blue-900);
     padding: 1.5em;
@@ -44,6 +46,29 @@ main {
 .card-image {
     border-radius: 10px;
     margin-block-end: 1.5rem;
+}
+
+.eye-image-container {
+    width: 312px;
+    aspect-ratio: 1;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.eye-image-container:hover,
+.eye-image-container:active {
+    background: var(--image-background);
+    opacity: 1;
+}
+
+.eye-image {
+    width: 48px;
+    aspect-ratio: 1;
 }
 
 .card-name {
