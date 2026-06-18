@@ -1,0 +1,111 @@
+:root {
+    --primary-blue-500: hsl(215, 51%, 70%);
+    --primary-cyan-400: hsl(178, 100%, 50%);
+    --neutral-blue-950: hsl(217, 54%, 11%);
+    --neutral-blue-900: hsl(216, 50%, 16%);
+    --neutral-blue-800: hsl(215, 32%, 27%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --background: hsl(215.63, 55.17%, 11.37%)
+}
+
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background: var(--background);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    width: 360px;
+    background: var(--neutral-blue-900);
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 30px 0 20px #0C1729,
+                0px 30px 0 60px #0C192C;
+}
+
+.card-image {
+    border-radius: 10px;
+    margin-block-end: 1.5rem;
+}
+
+.card-name {
+    color: var(--neutral-white);
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-block-end: 1.5rem;
+}
+
+.card-description {
+    color: var(--primary-blue-500);
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-block-end: 1.5rem;
+}
+
+.card-ntf{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--neutral-blue-800);
+    padding-block-end: 1.5rem;
+    margin-block-end: 1rem;
+}
+
+.card-nft-price,
+.card-nft-time-left {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.card-nft-price {
+    color: var(--primary-cyan-400);
+    font-weight: 600;
+}
+
+.card-nft-time-left {
+    color: var(--primary-blue-500)
+}
+
+.icon {
+    width: 16px;
+    aspect-ratio: 1;
+    object-fit:contain;
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-author-image {
+    width: 32px;
+    border: 1px solid var(--neutral-white);
+    border-radius: 50%;
+}
+
+.card-author-name {
+    color: var(--primary-blue-500);
+
+    span {
+        color: var(--neutral-white);
+    }
+}
